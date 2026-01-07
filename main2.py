@@ -20,8 +20,8 @@ def Draw():
             print(Error1)
     if drawncard == "J" or drawncard == "Q" or drawncard == "K":
         drawncard = 10
-        return drawncard
-    return drawncard
+        
+return Draw()
 
 def Hit():
     Draw
@@ -35,16 +35,18 @@ def Hit():
         print("Your hand: " + player_hand + ". \nAO's hand: " + AO_hand + ".")
         if sum(player_hand) > 21:
             print("BUST! AO loses. You Win!")
-
+return Hit()
         
+
+
 
 Error1 = "Error: User input does not match given choice. Ending game..."
 print("Welcome user.\nHit (h) or stay (s)?")
 gamechoice = input()
     if gamechoice == "h":
-        Hit
+        Hit()
     elif gamechoice == "s":
-        Stay
+        Stay()
     else:
         print(Error1)
 Welcome user.
