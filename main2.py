@@ -39,9 +39,9 @@ def Hit():
         
 
         player_hand.append(drawncard)
-    # if it's AO's turn:
-    else:  
-        AO_hand.append(random.choice(deck))
+# if it's AO's turn:
+        else:  
+            AO_hand.append(random.choice(deck))
 def Stay():
     if PlayerTurn == True:
         PlayerTurn = False 
