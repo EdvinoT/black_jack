@@ -38,17 +38,6 @@ def Hit():
 
         
 
-        player_hand.append(drawncard)
-# if it's AO's turn:
-        else:  
-            AO_hand.append(random.choice(deck))
-def Stay():
-    if PlayerTurn == True:
-        PlayerTurn = False 
-    else:
-        print("GAME OVER")
-    
-
 Error1 = "Error: User input does not match given choice. Ending game..."
 print("Welcome user.\nHit (h) or stay (s)?")
 gamechoice = input()
